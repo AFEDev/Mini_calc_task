@@ -1,0 +1,12 @@
+{
+    "compilerOptions" : {
+        "target": "ES6",
+        "removeComments" : true,
+        "sourceMap": true,
+        "watch": true
+    }
+    // "files" : [
+    //     "types.ts"
+    // ]
+
+}

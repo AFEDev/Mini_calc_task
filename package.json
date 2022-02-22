@@ -1,0 +1,19 @@
+{
+  "name": "ts_test_field",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dead-server --port=3000 --host=localhost"
+  },
+  "keywords": [],
+  "author": "Algirdas <algirduj@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "dead-server": "^1.0.6",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.5"
+  },
+  "description": ""
+}
