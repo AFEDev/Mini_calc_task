@@ -19,4 +19,3 @@ submitDOM.addEventListener('click', (e) => {
     console.log(res);
     return resultDOM.innerHTML = `${firstNumber.value} ${veiksmas} ${secondNumber.value} = ${res}`;
 });
-//# sourceMappingURL=calc.js.map
