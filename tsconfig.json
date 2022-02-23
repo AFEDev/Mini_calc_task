@@ -3,7 +3,11 @@
         "target": "ES6",
         "removeComments" : true,
         "watch": true,
-    }
+        "allowJs": true,
+        "declaration": true,
+        "outDir": "dist",
+        
+    },
     // "files" : [
     //     "types.ts"
     // ]

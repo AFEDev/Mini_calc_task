@@ -1,5 +1,5 @@
-const formDOM = document.querySelector(".form");
-const actionDOM = document.querySelector("#action").value;
+import { validateForm } from './app/validation.js';
+const actionDOM = document.querySelector("#action");
 const firstNumber = document.querySelector("#first_number");
 const secondNumber = document.querySelector("#second_number");
 const submitDOM = document.querySelector("button");
@@ -12,10 +12,11 @@ const matematika = {
 };
 submitDOM.addEventListener('click', (e) => {
     e.preventDefault();
+    validateForm("calc", "firstValue");
+    validateForm("calc", "secondValue");
     parseInt(firstNumber.value);
     parseInt(secondNumber.value);
-    const veiksmas = actionDOM;
+    const veiksmas = actionDOM.value;
     const res = matematika[veiksmas](parseInt(firstNumber.value), parseInt(secondNumber.value));
-    console.log(res);
     return resultDOM.innerHTML = `${firstNumber.value} ${veiksmas} ${secondNumber.value} = ${res}`;
 });

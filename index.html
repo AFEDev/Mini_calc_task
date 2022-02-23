@@ -5,24 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .form {
+        width: 200px;
+        height: 100px;
+        transition: transform 0.3s;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Skaiciuotuvas</h1>
-    <form>
-      <input id="first_number" type="number" required />
-      <select id="action" required>
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="/">/</option>
-        <option value="*">*</option>
-      </select>
-      <input id="second_number" type="number" required />
-      <button type="submit">Skaiciuoti</button>
-    </form>
-    <div class="result"></div>
+    <div class="form">
+      <form name="calc">
+        <input name="firstValue" id="first_number" required />
+        <select id="action" required>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">*</option>
+        </select>
+        <input name="secondValue" id="second_number" type="number" required />
+        <input type="text" list="planets" />
+        <datalist id="planets">
+          <option value="Mercury"></option>
+          <option value="Venus"></option>
+          <option value="Earth"></option>
+          <option value="Mars"></option>
+          <option value="Jupiter"></option>
+          <option value="Saturn"></option>
+          <option value="Uranus"></option>
+          <option value="Neptune"></option>
+        </datalist>
+        <button type="submit">Skaiciuoti</button>
+      </form>
+      <div class="result"></div>
+    </div>
 
-    <script src="./js/calc.js" defer></script>
-    <script src="index.js" defer></script>
+    <script src="./dist/calc.js" defer type="module"></script>
   </body>
 </html>

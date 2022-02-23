@@ -1,8 +1,9 @@
 {
   "name": "ts_test_field",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "calc.js",
   "type": "module",
+  "types": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "dead-server --port=3000 --host=localhost"
